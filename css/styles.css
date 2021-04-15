@@ -8,6 +8,7 @@
 body {
     --card-width: 350px;
     --button-color: lightseagreen;
+    --text-color: grey;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -27,6 +28,7 @@ body div {
     background-color: white;
     border-radius: 15px;
     overflow: hidden;
+    margin: 25px;
 }
 
 .cardHeader {
@@ -42,7 +44,7 @@ body div {
 
 .cardPhoto {
     width: calc(var(--card-width) * 0.35);
-    height: calc(var(--card-width) * 0.35);;
+    height: calc(var(--card-width) * 0.35);
 }
 
 .star {
@@ -60,7 +62,7 @@ body div {
 }
 
 .cardHeader > p {
-    color: grey;
+    color: var(--text-color);
     font-weight: bold;
 }
 
@@ -80,7 +82,7 @@ body div {
 }
 
 .infoBlock > p + p {
-    color: grey;
+    color: var(--text-color);
 }
 
 .infoBlock > * {
@@ -118,5 +120,5 @@ body div {
 
 .status {
     margin: 30px 0px;
-    color: grey;
+    color: var(--text-color);
 }
