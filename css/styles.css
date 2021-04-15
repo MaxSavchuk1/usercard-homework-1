@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+body {
+    --card-width: 350px;
+    --button-color: lightseagreen;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100vh;
+    background-color:lightgray;
+}
+
+body div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardContainer {
+    width: var(--card-width);
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.cardHeader {
+    height: calc(var(--card-width) * 0.7);
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.combinedPhoto {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.cardPhoto {
+    width: calc(var(--card-width) * 0.35);
+    height: calc(var(--card-width) * 0.35);;
+}
+
+.star {
+    width: calc(var(--card-width) * 0.08);
+    height: calc(var(--card-width) * 0.08);
+    background-color: white;
+    padding: 3px;
+    position: absolute;
+    bottom: calc(var(--card-width) * -0.04);
+}
+
+.combinedPhoto img {
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.cardHeader > p {
+    color: grey;
+    font-weight: bold;
+}
+
+.cardContent {
+    background: #F5F5F5;
+}
+
+.infoBlock {
+    width: 80%;
+    justify-content: space-evenly;
+}
+
+.infoBlock > p:first-child {
+    margin-top: 2em;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.infoBlock > p + p {
+    color: grey;
+}
+
+.infoBlock > * {
+    margin: 10px 0px;
+}
+
+
+.infoBlock img, .status img {
+    height: 1em;
+    width: 1em;
+    margin: -0.1em;
+    margin-right: 0.5em;
+}
+
+.view, .offer {
+    text-decoration: none;
+    width: calc(var(--card-width) * 0.7);
+    border: 1px solid var(--button-color);
+    border-radius: 10px;
+    font-weight: bold;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+}
+
+.view {
+    color:var(--button-color);
+    margin-top: 30px;
+    margin-bottom: 7px;
+}
+
+.offer {
+    color:white;
+    background-color: var(--button-color);
+}
+
+.status {
+    margin: 30px 0px;
+    color: grey;
+}
